@@ -1,34 +1,11 @@
 import React from "react";
 import travellerImage from "/traveller-1@2x.png"
+import { NavigationBar } from "../components/NavigationBar";
 const Home = () => {
-  const onButtonContainerClick = () => {
-
-  }
-  const onNavItemTextClick = () => {
-
-  }
   return (
-    <div className="w-full relative bg-white h-[1156px] overflow-hidden text-left text-3xl-6 text-st1 font-abhaya-libre-medium">
+    <div>
+      <NavigationBar />
       <div className="absolute top-[-198.2px] left-[-558.7px] w-[2556.9px] h-[1354.1px]">
-        <div className="absolute top-[260.7px] left-[750.7px] w-[1432.1px] h-[58.5px]">
-          <button
-            className="absolute top-[0px] left-[1296px] w-[136px] h-[53px] cursor-pointer bg-white text-3xl-6 box-border rounded-[7px] border-[1px] border-solid border-st1"
-            onClick={onButtonContainerClick}
-          >
-            Sign Up
-          </button>
-          <button
-            className="absolute top-[0px] left-[1100px] w-[136px] h-[53px] cursor-pointer bg-white text-3xl-6"
-            onClick={onNavItemTextClick}
-          >
-            Login
-          </button>
-          <div className="absolute top-[5.5px] left-[0px] w-[184px] h-[54px]">
-            <div className="absolute top-[42px] left-[90px] rounded-6xs bg-papayawhip w-[84px] h-3" />
-            <div className="absolute top-[0px] left-[163px] rounded-6xs bg-papayawhip w-5 h-3" />
-            <div className="absolute top-[41px] left-[0px] rounded-6xs bg-papayawhip w-5 h-3" />
-          </div>
-        </div>
         <div className="absolute top-[337.9px] left-[758.2px] w-[1685.5px] h-[1016.2px] text-[27px] text-salmon font-poppins">
           <div className="absolute top-[148.9px] left-[0px] w-[835.3px] h-[200.1px]">
             <b className="absolute top-[0px] left-[0px] uppercase inline-block w-[545px] h-[20px]">
@@ -64,13 +41,6 @@ const Home = () => {
             // onChange={}
           />
       </div>
-      <b className="absolute top-[57px] left-[181px] leading-[10px] flex font-volkhov text-st items-end w-[270px] h-[55px] text-21xl">
-        <span className="[line-break:anywhere] w-full">
-          <p className="m-0">WanderSolo</p>
-          <p className="m-0 text-92xl-7">&nbsp;</p>
-        </span>
-      </b>
-      
     </div>
   );
 };
